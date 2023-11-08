@@ -1,0 +1,104 @@
+.header{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    &__contacts{
+        display: flex;
+        gap: 28px;
+    }
+
+    &__call{
+        background-color: transparent;
+        border:  none;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 150%;
+        color: #4F8FF0;
+        font-family: Nunito Sans;
+    }
+
+    &__phone{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__phone-link{
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none; 
+    }
+
+    &__mail{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__mail-link{
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none; 
+    }
+
+    &-top{
+        background-color: #010101;
+        padding: 16px 0;
+    }
+
+    &-top__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom{
+        background: rgba(1, 1, 1, 0.76);
+        padding: 20px 0 28px 0;
+
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .menu{
+        
+        &__list{
+            display: flex;
+            gap: 0 32px;
+        }
+        &__item{
+            &-link{
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 120%;
+                color: #fff;
+            }
+        }
+    }
+
+    &__logo{
+        &-link{
+            text-decoration: none;
+        }
+
+        &-text:first-child{
+            color: #4F8FF0;
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 150%;
+            
+        }
+        &-text:last-child{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: lowercase;
+            line-height: 150%;
+        }
+    }
+}
