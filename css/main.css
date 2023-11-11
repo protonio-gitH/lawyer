@@ -204,6 +204,10 @@ body {
     position: relative;
     z-index: 10;
   }
+  .header__contacts {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 /* Nav Icon */
 .nav-icon-btn {
@@ -451,9 +455,6 @@ body {
   .uslugi {
     padding: 60px 0;
   }
-  .uslugi__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .uslugi__item {
     padding: 30px 32px 40px 32px;
   }
@@ -463,10 +464,13 @@ body {
     padding: 40px 0;
   }
   .uslugi__list {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    overflow-y: auto;
     gap: 24px;
   }
   .uslugi__item {
+    min-width: 250px;
+    max-height: 300px;
     margin: 0 auto;
     padding: 24px 16px 32px 16px;
   }
@@ -534,6 +538,17 @@ body {
 @media (max-width: 1024px) {
   .company {
     padding: 40px 0;
+  }
+  .company-history {
+    display: block;
+    max-width: 210px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .company-sertificats {
+    display: block;
+    max-width: 161px;
+    margin: 0 auto;
   }
 }
 .lawyers {
@@ -639,6 +654,7 @@ body {
   font-size: 14px;
   font-weight: 900;
   margin-right: 24px;
+  text-transform: uppercase;
 }
 .clients-makecomment {
   display: inline-block;
@@ -649,11 +665,27 @@ body {
   padding: 16px 24px;
   font-size: 14px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1024px) {
   .clients {
     padding: 40px 0;
+  }
+  .clients .buttons {
+    display: none;
+  }
+  .clients-comments {
+    display: block;
+    max-width: 146px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .clients-makecomment {
+    display: block;
+    max-width: 185px;
+    margin: 0 auto;
   }
 }
 .materials {
@@ -850,11 +882,15 @@ body {
   .footer {
     padding-top: 40px;
   }
+  .footer__top {
+    margin-bottom: 24px;
+  }
   .footer .footer__logo {
     margin: 0 auto;
   }
   .footer .footer__bottom {
     flex-direction: column;
+    margin-bottom: 40px;
     gap: 47px;
   }
   .footer .footer__private-inner {

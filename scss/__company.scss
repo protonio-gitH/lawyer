@@ -72,5 +72,18 @@
 @media (max-width:1024px){
     .company{
         padding: 40px 0;
+
+        &-history{
+            display: block;
+            max-width: 210px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+        &-sertificats{
+            display: block;
+            max-width: 161px;
+            margin: 0 auto;
+        }
     }
 }

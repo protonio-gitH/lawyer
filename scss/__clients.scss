@@ -70,6 +70,7 @@
     font-size: 14px;
     font-weight: 900;
     margin-right: 24px;
+    text-transform: uppercase;
    }
 
    &-makecomment{
@@ -81,6 +82,7 @@
     padding: 16px 24px;
     font-size: 14px;
     font-weight: 900;
+    text-transform: uppercase;
    }
     
 }
@@ -89,5 +91,24 @@
 @media (max-width:1024px){
     .clients{
         padding: 40px 0;
+
+        .buttons{
+            display: none;
+        }
+
+        &-comments{
+            display: block;
+            max-width: 146px;
+            margin: 0 auto;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        &-makecomment{
+            display: block;
+            max-width: 185px;
+            margin: 0 auto;
+            
+        }
     }
 }
