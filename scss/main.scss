@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,600;0,6..12,700;0,6..12,900;1,6..12,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,200&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -17,6 +17,61 @@ body{
     
 }
 
+.section-title{
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-line{
+    width: 50px;
+    height: 3px;
+    background-color: #4F8FF0;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.section-subtitle{
+    max-width: 920px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    padding: 0 10px;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom: 48px;
+}
+
+@media (max-width:1340px){
+    .section-title{
+        font-size: 24px;
+    }
+    .section-subtitle{
+        font-size: 16px;
+        max-width: 696px
+    }
+}
+
+@media (max-width:1024px){
+    .section-title{
+        font-size: 20px;
+    }
+    .section-subtitle{
+        font-size: 14px;
+        max-width: 696px
+    }
+}
 
 @import './_header';
 @import './_hero';
+@import './_uslugi';
+@import './_company';
+@import './_lawyers';
+@import './_clients';
+@import './_materials';
+@import './_footer';
